@@ -6,8 +6,8 @@ using System;
 
 byte[] c = [0x10,0x04,0x00,0x00,0x00,0x01];
 ushort len = (ushort)c.Length;
-Console.WriteLine(Convert.ToString(ModRTU_CRC(c, len), 16));
-Console.WriteLine(Convert.ToString(ModbusCalcCRC(c, len), 16));
+Console.WriteLine(Convert.ToString(ModRTU_CRC(c, len), 16).ToUpper());
+Console.WriteLine(Convert.ToString(ModbusCalcCRC(c, len), 16).ToUpper());
 
 
 // Compute the MODBUS RTU CRC
